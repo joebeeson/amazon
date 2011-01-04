@@ -43,15 +43,12 @@
 		);
 
 		/**
-		 * Initialization method. Triggered before the controller's `beforeFilfer`
-		 * method but after the model instantiation.
+		 * Initialization method. Triggered after being attached to a shell.
 		 *
-		 * @param Controller $controller
-		 * @param array $settings
 		 * @return null
 		 * @access public
 		 */
-		public function initialize(Controller $controller, $settings) {
+		public function initialize() {
 
 			// Handle loading our library firstly...
 			App::import(
